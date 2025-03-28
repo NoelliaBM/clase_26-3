@@ -10,6 +10,7 @@ export class profesor{
         this.nombre=pNombre;
         this.apellido=pApellido;
         this.listadoAlumnos= pListadoAlumnos;
+
         this.contratado= pContratado
 
 }
@@ -25,9 +26,12 @@ public getNombre(){
   public getListadoAlumnos(){
     return this.listadoAlumnos;
   }
+  public getContratado(){
+    return this.contratado;
+  }
 
-  public setNombre(pNombre:string):void{
-    this.nombre = pNombre;
+   setContratado(pContratado:boolean):void{
+    this.contratado = pContratado;
   }
   public setApellido(pApellido:string):void{
     this.apellido = pApellido;
