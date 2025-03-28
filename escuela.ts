@@ -3,7 +3,7 @@ import { profesor } from "./profesor";
 
 export class escuela{
    private alumnos:alumno[];
-    private profesor:profesor[];
+   private profesor:profesor[];
     
    public matricularAlumno(){};
    public cotratarProfesor(){};

@@ -3,12 +3,14 @@ export class alumno{
    private apellido: string;
    private nota:number;
    private aprobado:boolean;
+   private matriculado:boolean;
 
-   constructor (pNombre:string,pApellido:string,pNota:number,pAprobado:boolean){
+   constructor (pNombre:string,pApellido:string,pNota:number,pAprobado:boolean,pMatriculado:boolean){
     this.nombre=pNombre;
     this.apellido=pApellido;
     this.nota=pNota;
     this.aprobado=pAprobado;
+    this.matriculado=pMatriculado;
    }
    public getNombre(){
     return this.nombre;
@@ -41,4 +43,10 @@ export class alumno{
     }
   }
 
+  public setMatriculado(pMatriculado:boolean):void{
+    this.matriculado = pMatriculado;
+  }
+  public getMayticulado(){
+    return this.matriculado;
+  }
 }
