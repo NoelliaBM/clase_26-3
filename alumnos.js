@@ -44,7 +44,7 @@ var alumno = /** @class */ (function () {
         console.log("Nomvre: ".concat(this.nombre));
         console.log("Apellido: ".concat(this.apellido));
         console.log("Nota: ".concat(this.nota));
-        console.log("Aprobado: ".concat(this.nota > 7 ? "Sí" : "No"));
+        console.log("Aprobado: ".concat(this.nota));
         console.log("Matriculado: ".concat(this.matriculado ? "Sí" : "No"));
     };
     ;

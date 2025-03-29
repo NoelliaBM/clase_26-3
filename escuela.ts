@@ -9,5 +9,4 @@ export class escuela{
    public cotratarProfesor(){};
    public expulsarAlumno(){};
    public despedirProfesor(){};
-   
 }

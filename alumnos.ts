@@ -51,7 +51,7 @@ public infoAlumno(): void {
   console.log(`Nomvre: ${this.nombre}`);
   console.log(`Apellido: ${this.apellido}`);
   console.log(`Nota: ${this.nota}`);
-  console.log(`Aprobado: ${this.nota > 7 ? "Sí" : "No"}`);
+  console.log(`Aprobado: ${this.nota}`);
   console.log(`Matriculado: ${this.matriculado ? "Sí" : "No"}`);
 };
 };
