@@ -2,15 +2,16 @@ export class alumno{
    private nombre: string;
    private apellido: string;
    private nota:number;
-   private aprobado:boolean;
+   private aprobado:boolean
    private matriculado:boolean;
 
-   constructor (pNombre:string,pApellido:string,pNota:number,pAprobado:boolean,pMatriculado:boolean){
+   constructor (pNombre:string,pApellido:string,pNota:number,pAprobado?:boolean, pMatriculado?:boolean){
     this.nombre=pNombre;
     this.apellido=pApellido;
     this.nota=pNota;
-    this.aprobado=pAprobado;
-    this.matriculado=pMatriculado;
+    //pAprobado=this.nota > 7 ? true : false;
+    this.aprobado=pAprobado ?? this.nota > 7 ? true : false ;
+    this.matriculado=pMatriculado?? true;
    }
    public getNombre(){
     return this.nombre;
@@ -36,11 +37,6 @@ export class alumno{
   public setAprobado(pAprobado:boolean):void{
     this.aprobado = pAprobado;
 
-    if(this.nota > 7){
-        this.aprobado = true
-    }else{
-        this.aprobado = false
-    }
   }
 
   public setMatriculado(pMatriculado:boolean):void{
@@ -49,4 +45,13 @@ export class alumno{
   public getMayticulado(){
     return this.matriculado;
   }
-}
+
+
+public infoAlumno(): void {
+  console.log(`Nomvre: ${this.nombre}`);
+  console.log(`Apellido: ${this.apellido}`);
+  console.log(`Nota: ${this.nota}`);
+  console.log(`Aprobado: ${this.nota > 7 ? "Sí" : "No"}`);
+  console.log(`Matriculado: ${this.matriculado ? "Sí" : "No"}`);
+};
+};

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var alumnos_1 = require("./alumnos");
+var profesor_1 = require("./profesor");
+var alumno1 = new alumnos_1.alumno("Juan", "Gutierrez", 8, undefined, undefined);
+var alumno2 = new alumnos_1.alumno("Pedro", "Ruiz", 5, undefined, undefined);
+var alumno3 = new alumnos_1.alumno("Luis", "Perez", 9, undefined, undefined);
+var listaAlunos = new Array(alumno1, alumno2, alumno3);
+var profe1 = new profesor_1.profesor("Oscar", "Pereyra", listaAlunos, true);
+var profe2 = new profesor_1.profesor("Javier", "Rinaldi", listaAlunos, true);
+var listaProfe = new Array(profe1, profe2);
+console.log(listaAlunos);
