@@ -6,6 +6,8 @@ var alumno1 = new alumnos_1.alumno("Juan", "Gutierrez", 8, undefined, undefined)
 var alumno2 = new alumnos_1.alumno("Pedro", "Ruiz", 5, undefined, undefined);
 var alumno3 = new alumnos_1.alumno("Luis", "Perez", 9, undefined, undefined);
 var listaAlunos = new Array(alumno1, alumno2, alumno3);
+var alumno4 = new alumnos_1.alumno("Raul", "Gonzalez", 4, undefined, undefined);
+listaAlunos.push(alumno4);
 var profe1 = new profesor_1.profesor("Oscar", "Pereyra", listaAlunos, true);
 var profe2 = new profesor_1.profesor("Javier", "Rinaldi", listaAlunos, true);
 var listaProfe = new Array(profe1, profe2);

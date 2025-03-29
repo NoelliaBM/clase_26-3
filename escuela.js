@@ -5,7 +5,6 @@ var escuela = /** @class */ (function () {
     function escuela() {
     }
     escuela.prototype.matricularAlumno = function () { };
-    ;
     escuela.prototype.cotratarProfesor = function () { };
     ;
     escuela.prototype.expulsarAlumno = function () { };
