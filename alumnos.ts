@@ -98,4 +98,5 @@ export class alumno {
     console.log(`Aprobado: ${this.nota}`);
     console.log(`Matriculado: ${this.matriculado ? "Sí" : "No"}`);
   };
+  
 };
