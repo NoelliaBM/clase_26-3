@@ -41,6 +41,7 @@ export class escuela {
 
 
    public matricularAlumno() {
+
       console.log ("Matriculaste un alumno.")
     };
    public cotratarProfesor() {
@@ -50,6 +51,6 @@ export class escuela {
     };
    public despedirProfesor() {
       console.log ("Se ha despedido al profesor")
-    }
-   ;
+    };
+    
 }
