@@ -50,6 +50,7 @@ export class profesor {
   }
 
   public getListadoAlumnos() {
+
     return this.listadoAlumnos;
   }
   public setListadoAlumnos(pListadoAlumnos: alumno[]): void {

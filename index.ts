@@ -19,9 +19,13 @@ let profe1 = new profesor("Oscar", "Pereyra","matematica", listadoAlumnos, true)
 let profe2 = new profesor("Javier", "Rinaldi","ingles", listadoAlumnos, true);
 let listaProfe = new Array(profe1, profe2);
 
+
+
+
 let escuela1 =new escuela ("Media","Luna",listadoAlumnos,listaProfe);
 // console.log(escuela1);
 // console.log(listaProfe);
-escuela1.matricularAlumno()
-alumno1.setMatriculado(false)
-console.log(listadoAlumnos);
+//escuela1.matricularAlumno()
+//alumno1.setMatriculado(false)
+//console.log(listadoAlumnos);
+console.log(profe1.getListadoAlumnos())
