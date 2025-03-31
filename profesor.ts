@@ -1,17 +1,5 @@
 import { alumno } from "./alumnos"
 
-/*export class profesor{
-    private listadoAlumnos:alumno[];
-constructor(pListado:alumno[]){
-    this.listadoAlumnos= pListado;
-}
-public setListadoAlumnos(pListado:alumno[]):void{
-    this.listadoAlumnos = pListado;
-  }
-  public getListadoAlumnos(){
-    return this.listadoAlumnos;
-  }
-}*/
 export class profesor {
   private nombre: string;
   private apellido: string;

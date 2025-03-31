@@ -37,9 +37,6 @@ export class escuela {
    public setProfesores(pProfesores: profesor[]) {
       this.profesores = pProfesores;
    }
-
-
-
    public matricularAlumno() {
 
       console.log ("Matriculaste un alumno.")
@@ -52,5 +49,4 @@ export class escuela {
    public despedirProfesor() {
       console.log ("Se ha despedido al profesor")
     };
-    
 }
