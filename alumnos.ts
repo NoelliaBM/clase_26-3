@@ -1,16 +1,14 @@
-export class alumno {
+export class Alumno {
   private nombre: string;
   private apellido: string;
   private nota: number;
-  private aprobado: boolean
+  private aprobado: boolean;
   private matriculado: boolean;
 
-  constructor(pNombre: string, pApellido: string, pNota: number, pAprobado?: boolean, pMatriculado?: boolean) {
+  constructor(pNombre: string, pApellido: string, pNota: number, pMatriculado?: boolean) {
     this.nombre = pNombre;
     this.apellido = pApellido;
     this.nota = pNota;
-    //pAprobado=this.nota > 7 ? true : false;
-    this.aprobado = pAprobado ?? this.nota > 7 ? true : false;
     this.matriculado = pMatriculado ?? true;
   }
   public getNombre() {
@@ -40,7 +38,7 @@ export class alumno {
   public setMatriculado(pMatriculado: boolean): void {
     this.matriculado = pMatriculado;
   }
-  public getMayticulado() {
+  public getMatriculado() {
     return this.matriculado;
   }
   public infoAlumno(): void {
@@ -50,4 +48,9 @@ export class alumno {
     console.log(`Aprobado: ${this.nota}`);
     console.log(`Matriculado: ${this.matriculado ? "Sí" : "No"}`);
   };
+  public estaAprobado(): void{
+    this.aprobado = this.nota > 7 ? true : false;
+    console.log(`El alumno ${this.getNombre() } esta aprobado? : ${this.aprobado}`);
+    
+  }
 };

@@ -1,17 +1,17 @@
-import { alumno } from "./alumnos";
-import { profesor } from "./profesor";
+import { Alumno } from "./Alumnos";
+import { Profesor } from "./Profesor";
 
-export class escuela {
+export class Escuela {
    private nombre: string;
    private director: string;
-   private alumnos: alumno[];
-   private profesores: profesor[];
+   private Alumnos: Alumno[];
+   private Profesores: Profesor[];
 
-   constructor(pNombre: string, pDirector: string, pAlumnos: alumno[], pProfesores: profesor[]) {
+   constructor(pNombre: string, pDirector: string, pAlumnos: Alumno[], pProfesores: Profesor[]) {
       this.nombre = pNombre;
       this.director = pDirector;
-      this.alumnos = pAlumnos;
-      this.profesores = pProfesores;
+      this.Alumnos = pAlumnos;
+      this.Profesores = pProfesores;
    }
    public getNombre() {
       return this.nombre;
@@ -26,28 +26,30 @@ export class escuela {
       this.director = pDirector;
    }
    public getAlumnos() {
-      return this.alumnos;
+      return this.Alumnos;
    }
-   public setAlumnos(pAlumnos: alumno[]) {
-      this.alumnos = pAlumnos;
+   public setAlumnos(pAlumnos: Alumno[]) {
+      this.Alumnos = pAlumnos;
    }
    public getProfesores() {
-      return this.profesores;
+      return this.Profesores;
    }
-   public setProfesores(pProfesores: profesor[]) {
-      this.profesores = pProfesores;
+   public setProfesores(pProfesores: Profesor[]) {
+      this.Profesores = pProfesores;
    }
-   public matricularAlumno() {
-
-      console.log("Matriculaste un alumno.")
+   public matricularAlumno(pAlumno:Alumno) {
+      this.Alumnos.push(pAlumno)
+      console.log("Matriculaste un Alumno.")
    };
    public cotratarProfesor() {
       console.log("Usted esta contratado.")
    };
-   public expulsarAlumno() {
-      console.log("El alumno ha sido expulsado. ")
+   public expulsarAlumno(pListadoAlumnos:Alumno[]) {
+      let expulsa = (pListadoAlumnos).filter((Alumno) => Alumno.getMatriculado())
+   console.log(expulsa);
+      console.log("El Alumno ha sido expulsado. ")
    };
    public despedirProfesor() {
-      console.log("Se ha despedido al profesor")
+      console.log("Se ha despedido al Profesor")
    };
 }

@@ -1,13 +1,13 @@
-import { alumno } from "./alumnos"
+import { Alumno } from "./Alumnos";
 
-export class profesor {
+export class Profesor {
   private nombre: string;
   private apellido: string;
   private materia: string;
-  private listadoAlumnos: alumno[];
+  private listadoAlumnos: Alumno[];
   private contratado: boolean;
 
-  constructor(pNombre: string, pApellido: string, pMateria: string, pListadoAlumnos: alumno[], pContratado: boolean) {
+  constructor(pNombre: string, pApellido: string, pMateria: string, pListadoAlumnos: Alumno[], pContratado: boolean) {
     this.nombre = pNombre;
     this.apellido = pApellido;
     this.materia = pMateria;
@@ -38,7 +38,7 @@ export class profesor {
 
     return this.listadoAlumnos;
   }
-  public setListadoAlumnos(pListadoAlumnos: alumno[]): void {
+  public setListadoAlumnos(pListadoAlumnos: Alumno[]): void {
     this.listadoAlumnos = pListadoAlumnos;
   }
   public getContratado() {
