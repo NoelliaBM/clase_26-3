@@ -23,14 +23,18 @@ function matricularIndex(alumnoNombre):void{
     escuela1.matricularAlumno()
     return alumnoNombre;
 };
-let alumno4;
-console.log(matricularIndex(alumno4))
+let alumno5:undefined;
+console.log(matricularIndex(alumno5))
 
 
 // console.log(escuela1);
 // console.log(listaProfe);
 //escuela1.matricularAlumno()
-//alumno1.setMatriculado(false),
+//expulsar alumno
 //alumno1.setMatriculado(false), 
+console.log(alumno1.setMatriculado(false));
 //console.log(listadoAlumnos);
 //console.log(profe1.getListadoAlumnos())
+
+//desvincular profe
+console.log(profe1.setContratado(false))
