@@ -16,14 +16,12 @@ export class profesor {
     this.contratado = pContratado
 
   }
-
   public getNombre() {
     return this.nombre;
   }
-  public setNombre(pNombre:string){
-    this.nombre= pNombre;
-    }
-
+  public setNombre(pNombre: string) {
+    this.nombre = pNombre;
+  }
   public getApellido() {
     return this.apellido;
   }
@@ -34,9 +32,8 @@ export class profesor {
     return this.materia;
   }
   public setMateria(pMateria: string) {
-    this.materia =pMateria;
+    this.materia = pMateria;
   }
-
   public getListadoAlumnos() {
 
     return this.listadoAlumnos;
@@ -47,11 +44,7 @@ export class profesor {
   public getContratado() {
     return this.contratado;
   }
-
   setContratado(pContratado: boolean): void {
     this.contratado = pContratado;
   }
-
-
-
 }

@@ -36,17 +36,13 @@ export class alumno {
   }
   public setAprobado(pAprobado: boolean): void {
     this.aprobado = pAprobado;
-
   }
-
   public setMatriculado(pMatriculado: boolean): void {
     this.matriculado = pMatriculado;
   }
   public getMayticulado() {
     return this.matriculado;
   }
-
-
   public infoAlumno(): void {
     console.log(`Nombre: ${this.nombre}`);
     console.log(`Apellido: ${this.apellido}`);
@@ -54,5 +50,4 @@ export class alumno {
     console.log(`Aprobado: ${this.nota}`);
     console.log(`Matriculado: ${this.matriculado ? "Sí" : "No"}`);
   };
-
 };

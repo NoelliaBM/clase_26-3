@@ -39,14 +39,15 @@ export class escuela {
    }
    public matricularAlumno() {
 
-      console.log ("Matriculaste un alumno.")
-    };
+      console.log("Matriculaste un alumno.")
+   };
    public cotratarProfesor() {
-      console.log("Usted esta contratado.") };
+      console.log("Usted esta contratado.")
+   };
    public expulsarAlumno() {
       console.log("El alumno ha sido expulsado. ")
-    };
+   };
    public despedirProfesor() {
-      console.log ("Se ha despedido al profesor")
-    };
+      console.log("Se ha despedido al profesor")
+   };
 }
