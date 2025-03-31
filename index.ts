@@ -24,17 +24,20 @@ function matricularIndex(alumnoNombre):void{
     return alumnoNombre;
 };
 let alumno5:undefined;
+
+
+//ve escula completa
+console.log(escuela1);
+//listado de profesores
+console.log(listaProfe);
+//Matricular alumno
 console.log(matricularIndex(alumno5))
-
-
-// console.log(escuela1);
-// console.log(listaProfe);
-//escuela1.matricularAlumno()
 //expulsar alumno
-//alumno1.setMatriculado(false), 
+alumno1.setMatriculado(false), 
 console.log(alumno1.setMatriculado(false));
-//console.log(listadoAlumnos);
-//console.log(profe1.getListadoAlumnos())
-
+//listado de alumnos
+console.log(listadoAlumnos);
+//listado alumnos profesor1
+console.log(profe1.getListadoAlumnos())
 //desvincular profe
 console.log(profe1.setContratado(false))
