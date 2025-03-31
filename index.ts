@@ -26,15 +26,14 @@ function matricularIndex(alumnoNombre):void{
 let alumno5:undefined;
 
 
-//ve escula completa
+//ver escuela completa
 console.log(escuela1);
 //listado de profesores
 console.log(listaProfe);
 //Matricular alumno
 console.log(matricularIndex(alumno5))
 //expulsar alumno
-alumno1.setMatriculado(false), 
-console.log(alumno1.setMatriculado(false));
+alumno1.setMatriculado(false);
 //listado de alumnos
 console.log(listadoAlumnos);
 //listado alumnos profesor1
